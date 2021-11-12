@@ -1,0 +1,15 @@
+@font-face {
+    font-family: gilroy;
+    src: url("/assets/fonts/gilroy/Gilroy-Regular.woff");
+   }
+*{
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+/* body{
+    margin: 0;
+    font-family: Gilroy;
+    font-size: 30px;
+} */

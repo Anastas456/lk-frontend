@@ -1,0 +1,18 @@
+.footer{
+    display:flex;
+    flex: 0 0 auto;
+    height:130px;
+    background: #000000;
+    
+    /* justify-content: space-around; */
+}
+.footer_text{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text p{
+    color: #FFFFFF;
+    justify-content: center;
+}
