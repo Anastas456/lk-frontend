@@ -1,0 +1,469 @@
+/*Общее*/
+*{
+	font-family: gilroy;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+html { overflow-x: hidden; }
+a{
+	text-decoration: none;
+	color: #000;
+}
+button{
+	background-color: #000;
+	color: #fff;
+	border: 0px;
+}
+main{
+	width: 1220px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+h1{
+	margin: 50px 0;
+	font-weight: 600;
+	font-size: 55px;
+}
+h3{
+	font-weight: 500;
+	font-size: 35px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+/*header*/
+.header{
+    margin:auto;
+    /* width:1440px; */
+    height:130px;
+    background: #000000;
+    display:flex;
+    /* justify-content: space-around; */
+}
+.header_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header_logo img{
+    width: 278px;
+    height: 93px;
+    
+}
+.header_menu{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.header_menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header_menu .active{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+
+/*footer*/
+.footer{
+    display:flex;
+    flex: 0 0 auto;
+    height:130px;
+    background: #000000;
+    
+    /* justify-content: space-around; */
+}
+.footer_text{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text p{
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+
+
+
+
+/*organization*/
+.company-block{
+	width: 1220px;
+	margin: 15px auto;
+	display: flex;
+}
+.company-logo{
+	height: 200px;
+	width: 200px;
+}
+.company-text-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 8px 25px;
+}
+.company-name{
+	font-size: 35px;
+	font-weight: 600;	
+}
+.company-description{
+	font-weight: 400;
+}
+.company-button{
+	height: 70px;
+	width: 240px;
+	align-self: flex-end;
+	padding: 17px 28px;
+}
+.bottom-navigation{
+	display: flex;
+	width: 450px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 50px auto 75px auto;
+}
+.bottom-navigation button{
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	color: #000;
+	border: 0px;
+	border: 1px solid #000;
+}
+.bottom-navigation a{
+	font-size: 22px;
+	border-bottom: 1px solid #000;
+}
+
+
+
+/*autorazation*/
+.autorization{
+	background: #000;
+}
+.autorization-header-wrap{
+	width: 1440px;
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-black{
+	width: 382px;
+	height: 128px;
+}
+.autorization-header-wrap a{
+	align-self: center;
+	font-weight: 600;
+	font-size: 40px;
+	color: #fff;
+}
+.autorization-main-wrap{
+	margin-top: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.autorization-main-wrap h2{
+	color: #fff;
+	font-weight: 600;
+	font-size: 55px;
+}
+.login, .password{
+	display: flex;
+	align-self: flex-end;
+	justify-content: space-between;
+}
+.autorization-form-inputs{
+	margin-right: 155px;
+}
+.login{
+	margin: 80px 0;
+}
+.login div, .password div{
+	color: #fff;
+	margin-right: 25px;
+	font-family: Gilroy;
+	font-weight: 600;
+	font-size: 30px;
+	align-self: center;
+}
+.login input, .password input{
+	background: #000;
+	color: #fff;
+	width: 480px;
+	height: 70px;
+	padding: 17px 19px;
+	font-weight: 600;
+	font-size: 30px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+.autorization-main-wrap a{
+	margin: 57px auto;
+	font-weight: 600;
+	font-size: 30px;
+	color: #fff;
+}
+.autorization-form-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.autorization-form-wrap input[type=submit]{
+	width: 400px;
+	height: 70px;
+	border-radius: 0px;
+	margin: auto;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 35px;
+	background: #fff;
+	color: #000;
+	margin-bottom: 100px;
+}
+
+
+
+/*company*/
+.company-information{
+	font-weight: normal;
+	font-size: 24px;
+}
+.company-logo-big{
+	height: 365px;
+	width: 365px;
+}
+.vacancy-block{
+	display: flex;
+	padding: 14px 0 12px 40px;
+	border: 2px solid #000;
+	height: 170px;
+	margin-top: 30px;
+}
+.vacancy-text-wrap{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	justify-content: space-between;
+}
+.vacancy-tittle{
+	font-weight: 500;
+	font-size: 30px;
+}
+.vacancy-description{
+	font-weight: normal;
+	font-size: 22px;
+}
+.vacancy-date{
+	font-weight: 500;
+	font-size: 18px;
+}
+.vacancy-cost{
+	font-weight: 600;
+	font-size: 22px;
+	width: 10%;
+	margin-top: 6px;
+}
+
+
+
+/*vacancy*/
+.vacancy-page-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.vacancy-page-text{
+	display: flex;
+	margin-bottom: 50px;
+}
+.vacancy-page-tittle{
+	font-weight: bold;
+	font-size: 35px;
+}
+.vacancy-page-job{
+	font-weight: 500;
+	font-size: 35px;
+	margin-left: 30px;
+}
+.vacancy-page-description{
+	font-weight: normal;
+	font-size: 22px;
+	margin-top: 30px;
+}
+.vacancy-page-cost{
+	font-weight: 600;
+	font-size: 30px;
+	margin-top: 50px;
+}
+.vacancy-button {
+	height: 70px;
+	width: 240px;
+	padding: 17px 28px;
+	margin-top: 30px;
+}
+.h1-wrap p{
+	margin-top: -50px;
+	margin-bottom: 50px;
+}
+
+
+
+
+/*profile*/
+.student-wrap{
+	display: flex;
+}
+.student-anchors{
+	display: flex;
+	flex-direction: column;
+}
+.student-anchors p{
+	margin-top: 15px;
+}
+.student-anchors img{
+	margin-top: 15px;
+}
+.student-info{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.student-img{
+	width: 350px;
+	height: 350px;
+}
+.student-name{
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.student-info p span{
+	margin-left: 30px;
+}
+.profile-description{
+	margin-top: 15px;
+	font-weight: normal;
+	font-size: 24px;
+}
+.student-portfolio-wrap, .student-review-wrap{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.student-portfolio-wrap h3, .student-review-wrap h3{
+	text-align: center;
+	flex-basis: 100%;
+}
+.student-portfolio{
+	display: flex;
+	justify-content: space-between;
+}
+.student-portfolio div{
+	height: 265px;
+	width: 370px;
+	border: 2px solid grey;
+}
+.student-review-block{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.student-review-img{
+	height: 130px;
+	width: 130px;
+}
+.review-name{
+	font-weight: normal;
+	font-size: 35px;
+}
+.student-review{
+	font-weight: normal;
+	font-size: 24px;
+	align-self: flex-end;
+	margin-top: 12px;
+}
+.student-review-text-wrap{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 85%;
+}
+.review-name-wrap{
+	display: flex;
+}
+.stars-wrap{
+	display: flex;
+	margin-left: 10px;
+}
+.star{
+	margin-left: 5px;
+}
+.student-rating{
+	display: flex;
+}
+
+
+
+
+/*settingsProfile*/
+.settings-menu{
+	width: 100%;
+	display: flex;
+}
+.settings-menu a{
+	margin-right: 30px;
+	margin-top: 0;
+	font-weight: 600;
+	font-size: 30px;
+}
+.settings h3, .settings-password h3{
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 600;
+	font-size: 30px;
+}
+.settings-password{
+	display: flex;
+	flex-direction: column;
+}
+.settings-password input{
+	margin-bottom: 15px;
+}
+.settings input, .settings-password input{
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	padding: 7px 9px;
+	width: 450px;
+	height: 50px;
+}
+.settings-buttons-wrap a{
+	font-weight: 600;
+	font-size: 25px;
+}
+.settings-button{
+	height: 70px;
+	width: 240px;
+	padding: 17px 28px;
+	margin-top: 30px;
+}
+
+.settings textarea{
+	height: 300px;
+	width: 70%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "fonts/gilroy/stylesheet.css" rel = "stylesheet" type = "text/css" />
+	<link href = "style.css" rel = "stylesheet" type = "text/css" />
+	<title>Профиль</title>
+	
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img src="img/polytech_logo_black.png" alt="Polytech Logo">
+    </div>
+    <div class="header_menu">
+        <ul>
+            <li><a href="#">Профиль</a></li>
+            <li><a [routerLink]="'/organizations'" class="active">Организации</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Настройки</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<main>
+	<h1>Настройки</h1>
+
+	<div class="settings-menu">
+		<a href="#">Личные данные</a>
+		<a href="#">Профиль</a>
+	</div>
+
+	<form>
+		<div class="settings-wrap">
+			<div class="settings">
+				<h3>Логин*</h3>
+				<input type="text" name="" placeholder="Denis_25">
+			</div>
+			<div class="settings">
+				<h3>Телефон*</h3>
+				<input type="text" name="" placeholder="+7 999 *** ** 44">
+			</div>
+			<div class="settings">
+				<h3>E-mail*</h3>
+				<input type="text" name="" placeholder="denissokol@gmail.com">
+			</div>
+			<div class="settings-password">
+				<h3>Изменить пароль</h3>
+				<input type="password" name="" placeholder="Текущий пароль">
+				<input type="password" name="" placeholder="Новый пароль">	
+				<input type="password" name="" placeholder="Повторить пароль">
+			</div>
+
+			<div class="settings-buttons-wrap">
+				<button class="settings-button">Сохранить</button>
+				<a href="#">Удалить аккаунт</a>
+			</div>
+		</div>
+	</form>
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer_text">
+        <p>Ⓒ Московский политехнический университет</p>
+    </div>
+</footer>
+
+</body>
+</html>

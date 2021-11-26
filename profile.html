@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "fonts/gilroy/stylesheet.css" rel = "stylesheet" type = "text/css" />
+	<link href = "style.css" rel = "stylesheet" type = "text/css" />
+	<title>Профиль</title>
+	
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img src="img/polytech_logo_black.png" alt="Polytech Logo">
+    </div>
+    <div class="header_menu">
+        <ul>
+            <li><a href="#">Профиль</a></li>
+            <li><a [routerLink]="'/organizations'" class="active">Организации</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Настройки</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<main>
+	<h1>Профиль</h1>
+
+	<div class="student-wrap">
+		<div class="student-links">
+			<img src="img/student.png" id="student-img">
+			<div class="student-anchors">
+				<div class="student-rating">
+					<p>Рейтинг</p>
+					<div class="stars-wrap">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+					</div>
+				</div>
+				
+				<p>Работы</p>
+				<p>Портфолио</p>
+				<p>Отзывы</p>
+				<p>Отклики</p>
+				<p>Сообщения</p>
+				<div class="profile-ico">
+					<img src="img/vk.svg">
+					<img src="img/fb.svg">
+					<img src="img/git.svg">
+				</div>
+			</div>
+		</div>
+		<div class="student-info">
+			<div class="student-name">Денис Соколов</div>
+			<h3>Возраст: <span>25 лет</span></h3>
+			<h3>Специальность: <span>Frontend-developer</span></h3>
+			<h3>Образование: <span>Московский политехнический университет</span></h3>
+			<h3>Опыт:</h3>
+			<div class="profile-description">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</div>
+		</div>
+	</div>
+
+	<div class="student-portfolio-wrap">
+		<h3>Работы</h3>
+		<div class="student-portfolio">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="student-portfolio-wrap">
+		<h3>Портфолио</h3>
+		<div class="student-portfolio">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="student-review-wrap">
+		<h3>Отзывы</h3>
+		<div class="student-review-block">
+			<img src="img/student.png" class="student-review-img">
+			<div class="student-review-text-wrap">
+				<div class="review-name-wrap">
+					<p class="review-name">Имя Фамилия</p>
+					<div class="stars-wrap">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+					</div>
+				</div>
+				<p class="student-review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+		</div>
+
+		<div class="student-review-block">
+			<img src="img/student.png" class="student-review-img">
+			<div class="student-review-text-wrap">
+				<div class="review-name-wrap">
+					<p class="review-name">Имя Фамилия</p>
+					<div class="stars-wrap">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+					</div>
+				</div>
+				<p class="student-review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+		</div>
+
+		<div class="student-review-block">
+			<img src="img/student.png" class="student-review-img">
+			<div class="student-review-text-wrap">
+				<div class="review-name-wrap">
+					<p class="review-name">Имя Фамилия</p>
+					<div class="stars-wrap">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+						<img src="img/star.svg" class="star">
+					</div>
+				</div>
+				<p class="student-review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+		</div>
+	</div>
+
+
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer_text">
+        <p>Ⓒ Московский политехнический университет</p>
+    </div>
+</footer>
+
+</body>
+</html>
