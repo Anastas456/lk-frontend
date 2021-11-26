@@ -1,0 +1,91 @@
+*{
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.autorization{
+	background: #000;
+}
+.autorization-header-wrap{
+	width: 1440px;
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-black{
+	width: 382px;
+	height: 128px;
+}
+.autorization-header-wrap a{
+	align-self: center;
+	font-weight: 600;
+	font-size: 40px;
+	color: #fff;
+    text-decoration: none;
+}
+.autorization-main-wrap{
+	margin-top: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.autorization-main-wrap h2{
+	color: #fff;
+	font-weight: 600;
+	font-size: 55px;
+}
+.login, .password{
+	display: flex;
+	align-self: flex-end;
+	justify-content: space-between;
+}
+.autorization-form-inputs{
+	margin-right: 155px;
+}
+.login{
+	margin: 80px 0;
+}
+.login div, .password div{
+	color: #fff;
+	margin-right: 25px;
+	font-family: Gilroy;
+	font-weight: 600;
+	font-size: 30px;
+	align-self: center;
+}
+.login input, .password input{
+	background: #000;
+	color: #fff;
+	width: 480px;
+	height: 70px;
+	padding: 17px 19px;
+	font-weight: 600;
+	font-size: 30px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+.autorization-main-wrap a{
+	margin: 57px auto;
+	font-weight: 600;
+	font-size: 30px;
+	color: #fff;
+    text-decoration: none;
+}
+.autorization-form-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.autorization-form-wrap input[type=submit]{
+	width: 400px;
+	height: 70px;
+	border-radius: 0px;
+	margin: auto;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 35px;
+	background: #fff;
+	color: #000;
+	margin-bottom: 100px;
+}

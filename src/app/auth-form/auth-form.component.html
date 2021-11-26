@@ -1,0 +1,31 @@
+<div class="autorization">
+
+	<header class="autorization-header-wrap">
+		<img src="assets/images/polytech_logo.png" id="logo-black" alt="Polytech logo">
+		<a href="#">Вакансии</a>
+	</header>
+
+	<main class="autorization-main-wrap">
+		<h2>Авторизация</h2>
+		<form>
+			<div class="autorization-form-wrap">
+				<div class="autorization-form-inputs">
+					<div class="login">
+						<div>Логин</div>
+						<input type="email" name="email" placeholder="E-mail"
+                        [(ngModel)]="auth.email"  [ngModelOptions]="{ standalone: true }">
+					</div>
+					<div class="password">
+						<div>Пароль</div>
+						<input type="password" name="password" placeholder="Пароль..."
+                        [(ngModel)]="auth.password"  [ngModelOptions]="{ standalone: true }">
+					</div>
+				</div>
+				<a href="#">Забыли пароль?</a>
+				<input type="submit" name="submit" value="Войти" (click)="authUser()">
+			</div>
+		</form>
+		
+	</main>
+
+</div>
