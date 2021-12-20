@@ -7,19 +7,23 @@
 }
 .autorization{
 	background: #000;
+	height: 100%;
 }
 .autorization-header-wrap{
-	width: 1440px;
-	padding: 30px 40px;
+	height:130px;
+	/* padding: 30px 40px; */
 	display: flex;
 	justify-content: space-between;
 }
-.logo-black{
+.header-logo{
+	align-self: center;
+	margin-left:40px;
 	width: 382px;
 	height: 128px;
 }
 .autorization-header-wrap a{
 	align-self: center;
+	margin-right: 40px;;
 	font-weight: 600;
 	font-size: 40px;
 	color: #fff;
@@ -88,4 +92,62 @@
 	background: #fff;
 	color: #000;
 	margin-bottom: 100px;
+}
+
+@media screen and (max-width:1100px) {
+	.autorization-header-wrap{
+		height: 156px;
+	}
+	.header-logo{
+		width: 265px;
+		height: 90px;
+		margin-left: 27px;
+	}
+	.autorization-header-wrap a{
+		font-size: 30px;
+		margin-right: 66px;
+	}
+	.autorization-main-wrap h2{
+		font-size: 40px;
+		margin: 86px 0 50px 0;
+	}
+	.autorization-form-inputs{
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.login{
+		margin-bottom: 33.67px;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+	}
+	.login div{
+		align-self: center;
+		justify-self: center;
+	}
+	.login input{
+		align-self: center;
+		justify-self: center;
+	}
+	.password{
+		flex-direction: column;
+		margin-bottom: 33.67px;
+	}
+	.autorization-form-wrap{
+		display: flex;
+	}
+	.autorization-form-wrap a{
+		margin:auto auto 18.68px auto;
+		justify-self: center;
+	}
+	.autorization-form-wrap input[type=submit]{
+		width: 202.74px;
+		height: 66.14px;
+		margin:auto;
+		margin-bottom: 247.86px;
+	}
+
 }

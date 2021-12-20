@@ -1,0 +1,100 @@
+*{
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.h1-wrap{
+    margin: 50px 0 56px 110px;
+}
+.h1-wrap h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+.h1-wrap p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.vacancy-page-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.vacancy-page-text{
+	display: flex;
+	margin: 0 0 50px 110px;
+}
+.vacancy-page-title{
+	font-weight: bold;
+	font-size: 35px;
+}
+.vacancy-page-job{
+	font-weight: 500;
+	font-size: 35px;
+	margin-left: 30px;
+}
+.vacancy-page-description-title{
+	font-weight: bold;
+	font-size: 35px;
+	margin: 0 0 30px 110px;
+}
+.vacancy-page-description{
+	font-weight: normal;
+	font-size: 22px;
+	max-width: 1061px;
+	margin: 0 0 50px 110px;
+}
+.vacancy-page-description p{
+	margin-bottom: 38.28px;
+}
+.vacancy-page-cost{
+	font-weight: 600;
+	font-size: 30px;
+	margin: 0 0 68px 110px;
+}
+.vacancy-button {
+	height: 70px;
+	width: 240px;
+	padding: 17px 28px;
+	margin:0 0 200px 110px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+}
+
+@media screen and (max-width:1100px){
+	.h1-wrap{
+		margin:33.8px 0 20px 60px;
+	}
+	.h1-wrap h1{
+		font-size: 40px;
+	}
+	.h1-wrap p{
+		font-size: 25px;
+	}
+	.vacancy-page-text{
+		margin:0 0 16px 60px;
+	}
+	.vacancy-page-title, .vacancy-page-job{
+		font-size: 30px;
+	}
+	.vacancy-page-description-title{
+		font-size: 30px;
+		margin:0 0 20px 60px;
+	}
+	.vacancy-page-description{
+		font-size: 20px;
+		max-width: 615px;
+		margin: 0 0 40px 60px;
+	}
+	.vacancy-page-description p{
+		margin-bottom: 25.52px;
+	}
+	.vacancy-page-cost{
+		font-size: 30px;
+		margin: 0 0 30px 60px;
+	}
+	.vacancy-button{
+		font-size: 30px;
+		margin: 0 0 58px 60px;
+	}
+}

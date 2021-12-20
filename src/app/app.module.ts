@@ -9,6 +9,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { OrganizationInfoComponent } from './organization-info/organization-info.component';
+import { VacancyComponent } from './vacancy/vacancy.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     OrganizationsComponent,
     HeaderComponent,
     FooterComponent,
-    AuthFormComponent
+    AuthFormComponent,
+    OrganizationInfoComponent,
+    VacancyComponent
   ],
   imports: [
     BrowserModule,
