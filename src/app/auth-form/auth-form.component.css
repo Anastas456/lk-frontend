@@ -151,3 +151,47 @@
 	}
 
 }
+
+@media screen and (max-width:700px){
+	.autorization-header-wrap{
+		height:81px;
+	}
+	.header-logo{
+		width: 151px;
+		height: 51px;
+		margin-left: 9px;
+	}
+	.autorization-header-wrap a{
+		font-size: 20px;
+		margin-right: 22px;
+	}
+	.autorization-main-wrap h2{
+		font-size: 25px;
+		margin: 75px auto 30px auto;
+	}
+	.login{
+		margin: 30px auto 16.31px;
+	}
+	.password{
+		margin-bottom: 16.31px;
+	}
+	.login div, .password div{
+		font-size: 18px;
+	}
+	.login input, .password input{
+		font-size: 18px;
+		width: 224.95px;
+		height: 37.63px;
+		margin: auto 47px;
+	}
+	.autorization-form-wrap a{
+		font-size: 18px;
+		margin:auto auto 12.22px auto;
+	}
+	.autorization-form-wrap input[type=submit]{
+		width: 115.34px;
+		height: 37.63px;
+		margin-bottom: 127.37px;
+		font-size: 18px;
+	}
+}
