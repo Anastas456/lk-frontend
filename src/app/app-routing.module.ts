@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthFormComponent } from './auth-form/auth-form.component';
+import { DashboardOrganizationsMainComponent } from './dashboard-organizations-main/dashboard-organizations-main.component';
+import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
 import { OrganizationInfoComponent } from './organization-info/organization-info.component';
+import { OrganizationsForModerationComponent } from './organizations-for-moderation/organizations-for-moderation.component';
 import { OrganizationsComponent } from './organizations/organizations.component';
 import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -40,6 +43,18 @@ const routes: Routes = [
   {
     path:'profile-settings',
     component: ProfileSettingsComponent
+  },
+  {
+    path: 'dashboard-organizations-main',
+    component: DashboardOrganizationsMainComponent
+  },
+  {
+    path: 'organizations-for-moderation',
+    component: OrganizationsForModerationComponent
+  },
+  {
+    path: 'dashboard-statistic',
+    component: DashboardStatisticComponent
   }
 ];
 

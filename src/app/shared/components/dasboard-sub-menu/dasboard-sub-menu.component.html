@@ -1,0 +1,32 @@
+<div class="sub_menu">
+    <div class="sub_menu_main">
+        <ul class="sub_menu_main_menu">
+            <li><a
+                    [routerLink]="'/dashboard-organizations-main'" 
+                    [routerLinkActive]="'active'"
+                    [routerLinkActiveOptions]="{exact:true}"
+                >
+                Основное
+            </a></li>
+            <li><a
+                [routerLink]="'/organizations-for-moderation'" 
+                [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact:true}"
+                >
+                На модерацию
+            </a></li>
+            <li><a
+                [routerLink]="'/organizations-passed-moderation'" 
+                [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact:true}"
+                >
+                Прошли модерацию
+            </a></li>
+        </ul>
+    </div>
+    <div class="sub_menu_refresh">
+        <button class="sub_menu_refresh_button">
+            <img src="assets/images/refresh.svg">
+        </button>
+    </div>
+</div>

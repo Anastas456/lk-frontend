@@ -1,0 +1,51 @@
+*{
+    font-family: Gilroy;
+    margin:0;
+    padding:0;
+    color:white;
+}
+.main{
+    background: black;
+}
+.moderation_table{
+    width:100%;
+    border-spacing: 50px 20px;
+}
+tr{
+    width:100%;
+}
+td{
+    min-width: 251px;
+}
+tr:last-child{
+    margin-bottom: 51px;
+}
+.first_row td{
+    background: #3E3E3E;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 27px;
+}
+.first_row td p {
+    margin: 3px 10px;
+}
+.first_row td:nth-child(1){
+    width:356px;
+    margin-right: 63px;
+}
+.first_row td:nth-child(2){
+    width:329px;
+}
+.first_row td:nth-child(3){
+    width:251px;
+}
+.first_row td:nth-child(4){
+    width:251px;
+}
+.vacancy_name{
+    font-size: 30px;
+    font-weight: 500;
+}
+.start_time, .date, .status{
+    font-size: 25px;
+}

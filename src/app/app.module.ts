@@ -14,6 +14,11 @@ import { VacancyComponent } from './vacancy/vacancy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
+import { DashboardMainHeaderComponent } from './shared/components/dashboard-main-header/dashboard-main-header.component';
+import { DashboardOrganizationsMainComponent } from './dashboard-organizations-main/dashboard-organizations-main.component';
+import { DasboardSubMenuComponent } from './shared/components/dasboard-sub-menu/dasboard-sub-menu.component';
+import { OrganizationsForModerationComponent } from './organizations-for-moderation/organizations-for-moderation.component';
+import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { ProfileSettingsComponent } from './profile-settings/profile-settings.co
     VacancyComponent,
     ProfileComponent,
     UserSettingsComponent,
-    ProfileSettingsComponent
+    ProfileSettingsComponent,
+    DashboardMainHeaderComponent,
+    DashboardOrganizationsMainComponent,
+    DasboardSubMenuComponent,
+    OrganizationsForModerationComponent,
+    DashboardStatisticComponent
   ],
   imports: [
     BrowserModule,

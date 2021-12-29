@@ -1,0 +1,30 @@
+<div class="header">
+    <div class="header_main">
+        <ul class="header_main_menu">
+            <li><a
+                    [routerLink]="'/dashboard-organizations-main'" 
+                    [routerLinkActive]="'active'"
+                    [routerLinkActiveOptions]="{exact:true}"
+                >
+                Организации
+            </a></li>
+            <li><a
+                [routerLink]="'/dashboard-statistic'" 
+                [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact:true}"
+                >
+                Статистика
+            </a></li>
+            <li><a
+                [routerLink]="'/dashboard-settings'" 
+                [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact:true}"
+                >
+                Настройки
+            </a></li>
+        </ul>
+    </div>
+    <div class="header_exit">
+        <button class="header_exit_button">Выход</button>
+    </div>
+</div>
