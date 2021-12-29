@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { OrganizationInfoComponent } from './organization-info/organization-info.component';
 import { VacancyComponent } from './vacancy/vacancy.component';
+import { ProfileComponent } from './profile/profile.component';
+import { UserSettingsComponent } from './user-settings/user-settings.component';
+import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { VacancyComponent } from './vacancy/vacancy.component';
     FooterComponent,
     AuthFormComponent,
     OrganizationInfoComponent,
-    VacancyComponent
+    VacancyComponent,
+    ProfileComponent,
+    UserSettingsComponent,
+    ProfileSettingsComponent
   ],
   imports: [
     BrowserModule,

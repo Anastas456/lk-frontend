@@ -1,0 +1,306 @@
+*{
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+button{
+	background-color: #000;
+	color: #fff;
+	border: 0px;
+}
+main{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+h1{
+	margin: 50px 0;
+	font-weight: 600;
+	font-size: 55px;
+}
+h3{
+	font-weight: 500;
+	font-size: 35px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.student-wrap{
+	display: flex;
+}
+.student-anchors{
+	display: flex;
+	flex-direction: column;
+}
+.student-anchors p{
+	margin-top: 15px;
+}
+.student-anchors img{
+	margin-top: 15px;
+}
+.student-info{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.student-img{
+	width: 350px;
+	height: 350px;
+}
+.student-name{
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.student-info p span{
+	margin-left: 30px;
+}
+.profile-description{
+	margin-top: 15px;
+	font-weight: normal;
+	font-size: 24px;
+}
+.student-portfolio-wrap, .student-review-wrap{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.student-portfolio-wrap h3, .student-review-wrap h3{
+	text-align: center;
+	flex-basis: 100%;
+}
+.student-portfolio{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.student-portfolio div{
+	height: 265px;
+	width: 370px;
+	border: 2px solid grey;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.student-review-block{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.student-review-img{
+	height: 130px;
+	width: 130px;
+}
+.review-name{
+	font-weight: normal;
+	font-size: 35px;
+}
+.student-review{
+	font-weight: normal;
+	font-size: 24px;
+	align-self: flex-end;
+	margin-top: 12px;
+}
+.student-review-text-wrap{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 85%;
+}
+.review-name-wrap{
+	display: flex;
+}
+.stars-wrap{
+	display: flex;
+	margin-left: 10px;
+}
+.star{
+	margin-left: 5px;
+}
+.student-rating{
+	display: flex;
+}
+
+
+/* @media only screen and (max-width: 1400px){
+	.student-portfolio div, .student-portfolio div, .student-review div{
+		height: 200px;
+		width: 300px;
+	}
+} */
+
+@media only screen and (max-width: 1100px){
+	h1{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	.student-info{
+		margin-left: 13px;
+	}
+	.student-name{
+		font-size: 30px;
+		margin-bottom: 9px;
+	}
+	 h3{
+		font-weight: 500;
+		font-style: normal;
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	h3 span{
+		font-size: 20px;
+	}
+	#student-img{
+		width: 249px;
+		height: 249px;
+	}
+	.profile-description{
+		margin-top: 0px;
+		font-weight: normal;
+		font-size: 14px;
+	}
+	.student-anchors p{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.student-wrap img{
+		height: 20px;
+		width: 20px;
+		margin-top: 10px;
+	}
+	.profile-ico img{
+		width: 30px;
+		height: 30px;
+	}
+	.student-portfolio-wrap h3, .student-portfolio-wrap h3, .student-review-wrap h3{
+		font-size: 35px;
+		font-style: normal;
+		font-weight: 500;
+		margin-bottom: 34px;
+	}
+	.student-portfolio-wrap, .student-portfolio-wrap, .student-review-wrap{
+		margin-top: 40px;
+	}
+	.student-portfolio div, .student-portfolio div, .student-review div{
+		width: 198px;
+		height: 142px;
+	}
+	.review-name{
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.student-review{
+		font-size: 14px;
+	}
+	.star{
+		height: 24px;
+		width: 24px;
+	}
+	.review-name-wrap, .student-review{
+		margin-left: 35px;
+	}
+} 
+
+@media only screen and (max-width: 550px){
+	body{
+		width: 100%;
+	}
+	main{
+		margin-top:40px;
+	}
+	h1{
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+	.student-info{
+		margin-left: 13px;
+	}
+	.student-name{
+		font-size: 16px;
+		margin-bottom: 9px;
+	}
+	 h3{
+		font-weight: 500;
+		font-style: normal;
+		font-size: 12px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	h3 span{
+		font-size: 12px;
+	}
+	#student-img{
+		width: 100px;
+		height: 100px;
+	}
+	.profile-description{
+		margin-top: 0px;
+		font-weight: normal;
+		font-size: 10px;
+	}
+	.student-anchors p{
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 0px;
+	}
+	.stars-wrap img{
+		height: 10px;
+		width: 10px;
+		margin-top: 4px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.stars-wrap{
+		margin-left: 4px;
+	}
+	.profile-ico img{
+		width: 20px;
+		height: 20px;
+	}
+	.student-portfolio-wrap h3, .student-portfolio-wrap h3, .student-review-wrap h3{
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		margin-bottom: 12px;
+	}
+	.student-portfolio-wrap, .student-portfolio-wrap, .student-review-wrap{
+		margin-top: 20px;
+	}
+	.student-portfolio div, .student-portfolio div, .student-review div{
+		width: 130px;
+		height: 90px;
+	}
+	.review-name{
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.student-review{
+		font-size: 10px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	.star{
+		height: 14px;
+		width: 14px;
+	}
+	.student-portfolio{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.student-review-img{
+		height: 30px;
+		width: 30px;
+	}
+	.review-name-wrap{
+		margin-left: 5px;
+	}
+} 
