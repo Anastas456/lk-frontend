@@ -1,6 +1,6 @@
 *{
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     margin: 0;
 }
@@ -33,7 +33,7 @@
 	margin-left: 30px;
 }
 .vacancy-page-description-title{
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 35px;
 	margin: 0 0 30px 110px;
 }
@@ -45,6 +45,10 @@
 }
 .vacancy-page-description p{
 	margin-bottom: 38.28px;
+	font-size: 22px;
+}
+.vacancy-page-description p:last-child{
+	margin-bottom: 0;
 }
 .vacancy-page-cost{
 	font-weight: 600;

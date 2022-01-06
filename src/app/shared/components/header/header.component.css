@@ -47,7 +47,7 @@
     opacity: 0;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1250px){
     *{
         font-size: 18px;
     }
@@ -65,7 +65,7 @@
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:750px){
     .header{
         height: 40px;
         position: fixed;

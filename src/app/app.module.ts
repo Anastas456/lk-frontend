@@ -19,6 +19,7 @@ import { DashboardOrganizationsMainComponent } from './dashboard-organizations-m
 import { DasboardSubMenuComponent } from './shared/components/dasboard-sub-menu/dasboard-sub-menu.component';
 import { OrganizationsForModerationComponent } from './organizations-for-moderation/organizations-for-moderation.component';
 import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-sta
     DashboardOrganizationsMainComponent,
     DasboardSubMenuComponent,
     OrganizationsForModerationComponent,
-    DashboardStatisticComponent
+    DashboardStatisticComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
