@@ -3,63 +3,50 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { DashboardOrganizationsMainComponent } from './dashboard-organizations-main/dashboard-organizations-main.component';
 import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
-import { HelpComponent } from './help/help.component';
-import { OrganizationInfoComponent } from './organization-info/organization-info.component';
+import { isLoggedIn } from './isLoggedIn.guard';
 import { OrganizationsForModerationComponent } from './organizations-for-moderation/organizations-for-moderation.component';
-import { OrganizationsComponent } from './organizations/organizations.component';
-import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 import { ProfileComponent } from './profile/profile.component';
-import { UserSettingsComponent } from './user-settings/user-settings.component';
-import { VacancyComponent } from './vacancy/vacancy.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: OrganizationsComponent
-  },
-  {
-    path:'organizations',
-    component: OrganizationsComponent
-  },
-  {
-    path:'organization-info',
-    component: OrganizationInfoComponent
-  },
-  {
-    path:'vacancy',
-    component: VacancyComponent
+    component:AuthFormComponent
   },
   {
     path:'auth',
-    component: AuthFormComponent
+    component:AuthFormComponent
+  },
+  {
+    path:'organizations',
+    loadChildren: ()=>
+      import('./organizations-and-vacancies/organizations-and-vacancies.module').then((m) => m.OrganizationsAndVacanciesModule),
+    canActivate: [isLoggedIn]
   },
   {
     path:'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [isLoggedIn]
   },
   {
-    path:'user-settings',
-    component: UserSettingsComponent
-  },
-  {
-    path:'profile-settings',
-    component: ProfileSettingsComponent
+    path:'settings',
+    loadChildren: ()=>
+      import('./settings/settings.module').then((m) => m.SettingsModule),
+    canActivate: [isLoggedIn]
   },
   {
     path: 'dashboard-organizations-main',
-    component: DashboardOrganizationsMainComponent
+    component: DashboardOrganizationsMainComponent,
+    canActivate: [isLoggedIn]
   },
   {
     path: 'organizations-for-moderation',
-    component: OrganizationsForModerationComponent
+    component: OrganizationsForModerationComponent,
+    canActivate: [isLoggedIn]
   },
   {
     path: 'dashboard-statistic',
-    component: DashboardStatisticComponent
-  },
-  {
-    path: 'help',
-    component: HelpComponent
+    component: DashboardStatisticComponent,
+    canActivate: [isLoggedIn]
   }
 ];
 

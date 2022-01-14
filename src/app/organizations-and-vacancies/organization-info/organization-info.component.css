@@ -1,0 +1,104 @@
+*{
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+.company-name-big{
+	height: 209px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.company-name-big p{
+	font-size: 55px;
+    font-weight: 600;
+    margin-left: 110px;
+}
+.company-block{
+	max-width: 1220px;
+    display: flex;
+    padding: 0 110px;
+}
+.company-text-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 25px;
+}
+.company-info{
+    font-size: 35px;
+    font-weight: 600;	
+}
+.company-information{
+	font-weight: normal;
+	font-size: 24px;
+}
+.company-logo-big{
+	height: 365px;
+	width: 365px;
+}
+
+
+@media screen and (max-width:1100px){
+	.company-name-big{
+		height: 98.8px;
+	}
+	.company-name-big p{
+		font-size: 40px;
+		margin-left:60px;
+	}
+	.company-logo-big{
+		width: 160px;
+		height: 160px;
+	}
+	.company-block{
+		/* max-width:665px; */
+		min-height: 160px;
+		margin:0;
+		padding:0 43px 0 60px;
+	}
+	.company-info{
+		font-size: 22px;
+	}
+	.company-information{
+		font-size: 16px;
+		margin-top:8px;
+	}
+}
+
+@media screen and (max-width:700px) {
+	main{
+		margin-top:40px;
+	}
+	.company-name-big{
+		height: 82px;
+	}
+	.company-name-big p{
+		font-size: 20px;
+		margin-left:20px;
+	}
+	.company-block{
+		/* max-width: 280px; */
+		min-height: 90px;
+		padding: 0;
+		margin-left: 20px;
+	}
+	.company-logo-big{
+		width: 90px;
+		height: 90px;
+	}
+	.company-text-wrap{
+		justify-content: flex-start;
+		padding: 0 8px;
+	}
+	.company-info{
+		font-size: 16px;
+	}
+	.company-information{
+		font-size: 10px;
+		margin-top:4px;
+	}
+	
+
+}

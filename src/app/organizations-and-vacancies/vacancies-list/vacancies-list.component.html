@@ -1,0 +1,88 @@
+<div class="vacancy">Вакансии компании</div>
+
+	<div class="filters">
+		<p>Блок фильтров</p>
+	</div>
+
+	<div class="vacancy-block" *ngFor="let item of vacansiesList">
+		<div class="vacancy-text-wrap" (click)="onVacancy(item.id)">
+			<div class="vacancy-title">
+				{{item.name}}
+				<!-- Разработка логотипа -->
+			</div>
+			<div class="vacancy-description">
+				{{item.desc}}
+				<!-- Разработка логотипа описание разработка логотипа описание разработка логотипа описание разработка логотипа описание -->
+			</div>
+			<div class="vacancy-date">
+				Размещено: {{item.created_at | date:'dd.MM.y'}}
+				<!-- 05.06.2021 -->
+			</div>
+			<div class="vacancy-cost">
+				{{item.payment}} р.
+				<!-- Цена: 1 000 р. -->
+			</div>
+		</div>
+		
+	</div>
+
+		<!-- <div class="vacancy-block">
+		<div class="vacancy-text-wrap">
+			<div class="vacancy-title">
+				Разработка логотипа
+			</div>
+			<div class="vacancy-description">
+				Разработка логотипа описание разработка логотипа описание разработка логотипа описание разработка логотипа описание
+			</div>
+			<div class="vacancy-date">
+				Размещено: 05.06.2021
+			</div>
+			<div class="vacancy-cost">
+				Цена: 1 000 р.
+			</div>
+		</div>
+	</div> -->
+
+		<!-- <div class="vacancy-block">
+		<div class="vacancy-text-wrap">
+			<div class="vacancy-title">
+				Разработка логотипа
+			</div>
+			<div class="vacancy-description">
+				Разработка логотипа описание разработка логотипа описание разработка логотипа описание разработка логотипа описание
+			</div>
+			<div class="vacancy-date">
+				Размещено: 05.06.2021
+			</div>
+			<div class="vacancy-cost">
+				Цена: 1 000 р.
+			</div>
+		</div>
+		
+	</div> -->
+		<!-- <div class="vacancy-block">
+		<div class="vacancy-text-wrap">
+			<div class="vacancy-title">
+				Разработка логотипа
+			</div>
+			<div class="vacancy-description">
+				Разработка логотипа описание разработка логотипа описание разработка логотипа описание разработка логотипа описание
+			</div>
+			<div class="vacancy-date">
+				Размещено: 05.06.2021
+			</div>
+			<div class="vacancy-cost">
+				Цена: 1 000 р.
+			</div>
+		</div>
+		
+	</div> -->
+
+    <div class="bottom-navigation">
+		<a>Назад</a>
+		<button>1</button>
+		<button>2</button>
+		<button>...</button>
+		<button>10</button>
+		<a>Следующая</a>
+	</div>

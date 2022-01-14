@@ -1,0 +1,29 @@
+<app-header></app-header>
+<main>
+    <div class="orgnization">
+        <div class="organization-name">Организации</div>
+    </div>
+	<div class="company-block" *ngFor="let item of organizationList">
+		<img src="/assets/images/company-logo.jpg" class="company-logo" alt="Company's logo">
+		<div class="company-text-wrap">
+			<div class="company-name" (click)="onMoreInfo(item.id)">{{item.name}}</div>
+			<div class="company-description">
+				{{item.desc}}
+				Основная краткая информация о компании 
+				Основная информация о компании
+			</div>
+		</div>
+		<button class="company-button" (click)="onMoreInfo(item.id)">Подробнее...</button>
+	</div>
+
+	<div class="bottom-navigation">
+		<a>Назад</a>
+		<button>1</button>
+		<button>2</button>
+		<button>...</button>
+		<button>10</button>
+		<a>Следующая</a>
+	</div>
+</main>
+
+<app-footer></app-footer>

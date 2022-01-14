@@ -19,10 +19,20 @@ main{
 	margin: auto;
 	margin-bottom: 50px;
 }
-h1{
+.profile-title{
 	margin: 50px 0;
+	display:flex;
+	align-content: center;
+}
+.profile-title h1{
 	font-weight: 600;
 	font-size: 55px;
+}
+.profile-title button{
+	margin-left:auto;
+	width: 130px;
+	padding: 22px;
+	font-weight: 700;
 }
 h3{
 	font-weight: 500;
@@ -126,6 +136,17 @@ h3{
 .student-rating{
 	display: flex;
 }
+.more-comments{
+	width:100%;
+	margin: 33px auto 265px auto;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+.more-comments p{
+	font-size: 35px;
+	text-decoration: underline;
+}
 
 
 /* @media only screen and (max-width: 1400px){
@@ -136,9 +157,16 @@ h3{
 } */
 
 @media only screen and (max-width: 1100px){
-	h1{
-		font-size: 40px;
+	.profile-title{
+		margin-top:25px;
 		margin-bottom: 30px;
+	}
+	.profile-title button{
+		padding:10px;
+		font-size: 20px;
+	}
+	.profile-title h1{
+		font-size: 40px;
 	}
 	.student-info{
 		margin-left: 13px;
@@ -147,7 +175,7 @@ h3{
 		font-size: 30px;
 		margin-bottom: 9px;
 	}
-	 h3{
+	h3{
 		font-weight: 500;
 		font-style: normal;
 		font-size: 20px;
@@ -157,7 +185,7 @@ h3{
 	h3 span{
 		font-size: 20px;
 	}
-	#student-img{
+	.student-img{
 		width: 249px;
 		height: 249px;
 	}
@@ -170,7 +198,7 @@ h3{
 		font-size: 20px;
 		margin-top: 10px;
 	}
-	.student-wrap img{
+	.stars-wrap img{
 		height: 20px;
 		width: 20px;
 		margin-top: 10px;
@@ -206,6 +234,12 @@ h3{
 	.review-name-wrap, .student-review{
 		margin-left: 35px;
 	}
+	.more-comments{
+		margin: 43px auto 66px auto;
+	}
+	.more-comments p{
+		font-size: 20px;
+	}
 } 
 
 @media only screen and (max-width: 550px){
@@ -215,9 +249,16 @@ h3{
 	main{
 		margin-top:40px;
 	}
-	h1{
-		font-size: 20px;
+	.profile-title{
 		margin-bottom: 16px;
+		margin-top:50px;
+	}
+	.profile-title h1{
+		font-size: 20px;
+	}
+	.profile-title button{
+		font-size: 16px;
+		padding:4px;
 	}
 	.student-info{
 		margin-left: 13px;
@@ -226,7 +267,7 @@ h3{
 		font-size: 16px;
 		margin-bottom: 9px;
 	}
-	 h3{
+	h3{
 		font-weight: 500;
 		font-style: normal;
 		font-size: 12px;
@@ -236,7 +277,7 @@ h3{
 	h3 span{
 		font-size: 12px;
 	}
-	#student-img{
+	.student-img{
 		width: 100px;
 		height: 100px;
 	}
@@ -302,5 +343,11 @@ h3{
 	}
 	.review-name-wrap{
 		margin-left: 5px;
+	}
+	.more-comments{
+		margin: 22px auto 46px auto;
+	}
+	.more-comments p{
+		font-size: 16px;
 	}
 } 

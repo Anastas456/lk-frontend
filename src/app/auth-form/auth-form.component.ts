@@ -24,14 +24,13 @@ export class AuthFormComponent implements OnInit {
   authUser(){
     this.userService.loginUser(this.auth).subscribe(
       response => {
-        console.log(response);
-        alert('Пользователь '+ this.auth.email + ' залогинился');
-        // this.router.navigate(['/']);
-
+        // console.log(response);
+        this.router.navigate(['/organizations']);
+        this.userService.storeUser(response.token, response.user)
       },
       error =>{
         console.log(error);
-        alert('Возможно был введен неправильный логин и пароль. Пожалуйста, попробуйте снова.');
+        alert('Был введен неправильный логин и пароль. Пожалуйста, попробуйте снова.');
       }
     )
   }

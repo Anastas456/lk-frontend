@@ -1,0 +1,31 @@
+<form [formGroup]="userSettingsForm">
+	<div class="settings-wrap">
+		<div class="settings">
+			<h3>Логин*</h3>
+			<input type="text" name="" placeholder="Denis_25">
+		</div>
+		<div class="settings">
+			<h3>Телефон*</h3>
+			<input type="text" name="" placeholder="+7 999 *** ** 44">
+		</div>
+		<div class="settings">
+			<h3>E-mail*</h3>
+			<input type="text" name="" placeholder="denissokol@gmail.com"
+			formControlName="email">
+		</div>
+		<div class="settings-password">
+			<h3>Изменить пароль</h3>
+			<input type="password" name="" placeholder="Текущий пароль"
+			formControlName="presentPass">
+			<input type="password" name="" placeholder="Новый пароль"
+			formControlName="newPass">	
+			<input type="password" name="" placeholder="Повторить пароль"
+			formControlName="passwordConfirmation">
+		</div>
+
+		<div class="settings-buttons-wrap">
+			<button class="settings-button" (click)="onSave()">Сохранить</button>
+			<a (click)="onDelete()">Удалить аккаунт</a>
+		</div>
+	</div>
+</form>

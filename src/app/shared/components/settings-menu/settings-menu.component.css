@@ -1,0 +1,24 @@
+*{
+	font-family: gilroy;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.active{
+	border-bottom: 1px solid black;
+}
+.settings-menu{
+	width: 100%;
+	display: flex;
+}
+.settings-menu a{
+	margin-right: 30px;
+	margin-top: 0;
+	font-weight: 600;
+	font-size: 30px;
+}

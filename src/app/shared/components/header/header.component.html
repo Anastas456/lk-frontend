@@ -1,6 +1,6 @@
 <header class="header">
     <div class="header_logo">
-        <a [routerLink]="'/'" >
+        <a [routerLink]="'/organizations'" >
             <img src="/assets/images/polytech_logo.png" alt="Polytech Logo">
         </a>
         
@@ -27,15 +27,10 @@
                 [routerLinkActiveOptions]="{exact:true}"
                 >Сообщения</a></li>
             <li><a class="menu__item"
-                [routerLink]="'/user-settings'"
+                [routerLink]="'/settings'"
                 [routerLinkActive]="'active'"
                 [routerLinkActiveOptions]="{exact:true}"
                 >Настройки</a></li>
-            <li><a class="menu__item"
-                [routerLink]="'/help'"
-                [routerLinkActive]="'active'"
-                [routerLinkActiveOptions]="{exact:true}"
-                >Помощь</a></li>
         </ul>
     </div>
 

@@ -1,16 +1,61 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+// import { tokenNotExpired } from 'angular2-jwt';
 import { Observable } from 'rxjs';
+// import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserServiceService {
 
-  constructor(private http: HttpClient) { }
+  token:any;
+  user:any;
+
+  constructor(private http: HttpClient) {  }
+
 
   loginUser(userData: any): Observable<any>{
-    return this.http.post('', userData);  //добавить путь
+    return this.http.post('http://career-api.std-950.ist.mospolytech.ru/api/login', userData);
   }
+
+  storeUser(token, user){
+    localStorage.setItem('token', token);
+    localStorage.setItem('user', JSON.stringify(user));
+    this.token=token;
+    this.user= user;
+    
+  }
+
+  logoutUser(){
+    this.token=null;
+    this.user=null;
+    localStorage.clear();
+  }
+
+  // isLoggedIn(){
+  //   return tokenNotExpired();
+  // }
+  isLoggedIn(){
+    if (localStorage.getItem('token')){
+      return true
+    }
+    else {
+      return false
+    }
+  }
+
+  updateUser(id:any, data:any): Observable<any>{
+    return this.http.put( `http://career-api.std-950.ist.mospolytech.ru/api/users/${id}`, data, {headers: new HttpHeaders({
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
+    })})
+  }
+
+  deleteUser(id:any): Observable<any>{
+    return this.http.delete(`http://career-api.std-950.ist.mospolytech.ru/api/users/${id}`, {headers: new HttpHeaders({
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
+    })})
+  }
+
 
 }
