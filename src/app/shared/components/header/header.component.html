@@ -31,6 +31,12 @@
                 [routerLinkActive]="'active'"
                 [routerLinkActiveOptions]="{exact:true}"
                 >Настройки</a></li>
+            <li><a class="menu__item"
+                [routerLink]="'/dashboards/organizations-info/main'"
+                [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact:true}"
+                *ngIf="user.role_id=='1'"
+                >Дашборды</a></li>
         </ul>
     </div>
 

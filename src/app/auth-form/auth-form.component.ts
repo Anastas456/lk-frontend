@@ -30,7 +30,7 @@ export class AuthFormComponent implements OnInit {
       },
       error =>{
         console.log(error);
-        alert('Был введен неправильный логин и пароль. Пожалуйста, попробуйте снова.');
+        alert('Был введен неправильный логин или пароль. Пожалуйста, попробуйте снова.');
       }
     )
   }

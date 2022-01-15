@@ -2,14 +2,14 @@
     <div class="header_main">
         <ul class="header_main_menu">
             <li><a
-                    [routerLink]="'/dashboard-organizations-main'" 
+                    [routerLink]="'./organizations-info'" 
                     [routerLinkActive]="'active'"
                     [routerLinkActiveOptions]="{exact:true}"
                 >
                 Организации
             </a></li>
             <li><a
-                [routerLink]="'/dashboard-statistic'" 
+                [routerLink]="'./statistic'" 
                 [routerLinkActive]="'active'"
                 [routerLinkActiveOptions]="{exact:true}"
                 >
@@ -25,6 +25,6 @@
         </ul>
     </div>
     <div class="header_exit">
-        <button class="header_exit_button">Выход</button>
+        <button class="header_exit_button" (click)="onExit()">Выход</button>
     </div>
 </div>

@@ -3,6 +3,7 @@
     flex: 0 0 auto;
     height:130px;
     background: #000000;
+    align-self: flex-end;
     
     /* justify-content: space-around; */
 }

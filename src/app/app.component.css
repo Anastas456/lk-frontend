@@ -8,6 +8,7 @@
     font-weight: 400;
     margin: 0;
     padding:0;
+    height:100%;
 }
 ::ng-deep body{
     margin: 0;

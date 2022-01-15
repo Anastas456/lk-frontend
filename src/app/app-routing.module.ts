@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthFormComponent } from './auth-form/auth-form.component';
-import { DashboardOrganizationsMainComponent } from './dashboard-organizations-main/dashboard-organizations-main.component';
-import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
 import { isLoggedIn } from './isLoggedIn.guard';
-import { OrganizationsForModerationComponent } from './organizations-for-moderation/organizations-for-moderation.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
@@ -34,20 +31,38 @@ const routes: Routes = [
     canActivate: [isLoggedIn]
   },
   {
-    path: 'dashboard-organizations-main',
-    component: DashboardOrganizationsMainComponent,
-    canActivate: [isLoggedIn]
-  },
-  {
-    path: 'organizations-for-moderation',
-    component: OrganizationsForModerationComponent,
-    canActivate: [isLoggedIn]
-  },
-  {
-    path: 'dashboard-statistic',
-    component: DashboardStatisticComponent,
-    canActivate: [isLoggedIn]
+    path:'dashboards',
+    loadChildren: ()=>
+      import('./dashboards/dashboards.module').then((m) => m.DashboardsModule),
+    canActivate:[isLoggedIn],
+    data: {
+      expectedRole: ['1']
+    }
   }
+  // {
+  //   path: 'dashboard-organizations-main',
+  //   component: DashboardOrganizationsMainComponent,
+  //   canActivate: [isLoggedIn],
+  //   data: {
+  //     expectedRole: ['1']
+  //   }
+  // },
+  // {
+  //   path: 'organizations-for-moderation',
+  //   component: OrganizationsForModerationComponent,
+  //   canActivate: [isLoggedIn],
+  //   data: {
+  //     expectedRole: ['1']
+  //   }
+  // },
+  // {
+  //   path: 'dashboard-statistic',
+  //   component: DashboardStatisticComponent,
+  //   canActivate: [isLoggedIn],
+  //   data: {
+  //     expectedRole: ['1']
+  //   }
+  // }
 ];
 
 @NgModule({
