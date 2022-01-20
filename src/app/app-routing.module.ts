@@ -39,30 +39,6 @@ const routes: Routes = [
       expectedRole: ['1']
     }
   }
-  // {
-  //   path: 'dashboard-organizations-main',
-  //   component: DashboardOrganizationsMainComponent,
-  //   canActivate: [isLoggedIn],
-  //   data: {
-  //     expectedRole: ['1']
-  //   }
-  // },
-  // {
-  //   path: 'organizations-for-moderation',
-  //   component: OrganizationsForModerationComponent,
-  //   canActivate: [isLoggedIn],
-  //   data: {
-  //     expectedRole: ['1']
-  //   }
-  // },
-  // {
-  //   path: 'dashboard-statistic',
-  //   component: DashboardStatisticComponent,
-  //   canActivate: [isLoggedIn],
-  //   data: {
-  //     expectedRole: ['1']
-  //   }
-  // }
 ];
 
 @NgModule({

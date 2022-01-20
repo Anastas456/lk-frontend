@@ -9,27 +9,37 @@ import { Observable } from 'rxjs';
 })
 export class UserServiceService {
 
-  token:any;
-  user:any;
+  // token:any;
+  // user:any;
 
   constructor(private http: HttpClient) {  }
 
 
   loginUser(userData: any): Observable<any>{
-    return this.http.post('http://career-api.std-950.ist.mospolytech.ru/api/login', userData);
+    return this.http.post('http://career-api.std-950.ist.mospolytech.ru/api/login', userData, {headers: new HttpHeaders({
+      'Accept': 'application/json',
+      'x-requested-with': 'XMLHttpRequest'
+      // 'Content-Type': 'application/x-www-form-urlencoded'
+    })});
   }
 
   storeUser(token, user){
     localStorage.setItem('token', token);
     localStorage.setItem('user', JSON.stringify(user));
-    this.token=token;
-    this.user= user;
+    // this.token=token;
+    // this.user= user;
     
   }
 
+  restoreUser(user){
+    // localStorage.removeItem('user');
+    localStorage.setItem('user', JSON.stringify(user));
+    // this.user = user;
+  }
+
   logoutUser(){
-    this.token=null;
-    this.user=null;
+    // this.token=null;
+    // this.user=null;
     localStorage.clear();
   }
 

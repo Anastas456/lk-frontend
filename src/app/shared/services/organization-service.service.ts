@@ -14,7 +14,8 @@ export class OrganizationServiceService {
   
   getOrganizations():Observable<any>{
       return this.http.get(`${baseUrl}/organizations`, {headers: new HttpHeaders({
-        'Authorization': 'Bearer ' + localStorage.getItem('token')
+        'Authorization': 'Bearer ' + localStorage.getItem('token'),
+        'x-requested-with': 'XMLHttpRequest'
       })});
     }
 

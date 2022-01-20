@@ -16,6 +16,7 @@ export class ProfileSettingsComponent implements OnInit {
   constructor(private userService:UserServiceService) { }
 
   ngOnInit(): void {
+    
     this.profileSettingsForm = new FormGroup({
       name: new FormControl(this.user.name),
       surname: new FormControl(this.user.surname),
@@ -28,7 +29,8 @@ export class ProfileSettingsComponent implements OnInit {
     this.userService.updateUser(this.user.id, this.profileSettingsForm.value)
       .subscribe(
         response => {
-          console.log(response);
+          // console.log(response);
+          this.userService.restoreUser(response);
           alert('Изменения сохранены');
         },
         error => {
